@@ -1,0 +1,60 @@
+ 
+ /* El siguiente grid esta en la page lugarDeResidencia*/
+  .container2 {  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+   gap: 0px 0px;
+   justify-self: center;
+   align-items: center;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "Header Header Header"
+     "Banner Banner Banner"
+     "imagen1 imagen2 imagen3"
+     "imagen1 imagen2 imagen3"
+     "footer2 footer2 footer2";
+ }
+ 
+ .Header { grid-area: Header; }
+ 
+ .Banner { grid-area: Banner; }
+ 
+ .imagen1 { grid-area: imagen1; }
+ 
+ .imagen2 { grid-area: imagen2; }
+ 
+ .imagen3 { grid-area: imagen3; }
+ 
+ .footer2 { grid-area: footer2; }
+ @media screen and (max-width:480px) {
+   .container2{
+       grid-template-columns: 1fr;
+       grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+       grid-template-areas: "Header"
+       "Banner"
+       "imagen1"
+       "imagen2"
+       "imagen3"
+       "footer2";
+   }
+   
+ }
+  
+  .imagen2 { grid-area: imagen2; }
+  
+  .imagen3 { grid-area: imagen3; }
+  
+  .footer2 { grid-area: footer2; }
+  @media screen and (max-width:480px) {
+    .container2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-areas: "Header"
+        "Banner"
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "footer2";
+    }
+    
+  }
